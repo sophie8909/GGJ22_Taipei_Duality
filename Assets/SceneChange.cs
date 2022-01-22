@@ -5,19 +5,27 @@ using UnityEngine;
 
 public class SceneChange : MonoBehaviour
 {
+    public static GameObject ChildBox;
+    public static GameObject ChildFloor;
+
+    private static void Active_ChildObject()
+    {
+        ChildSceneBox.SetActive(true);
+        ChildSceneFloor.SetActive(true);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        SceneManager.LoadScene(0);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.V))
+        if(Input.GetKey("v"))
         {
-             SceneManager.LoadScene(1);
-             ChildSceneChecked.Active_ChildObject();
+            
         }
     }
 }

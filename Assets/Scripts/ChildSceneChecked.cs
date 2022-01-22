@@ -5,12 +5,12 @@ using UnityEngine;
 public class ChildSceneChecked : MonoBehaviour
 {
 
-    public static GameObject ChildSceneBox;
-    public static GameObject ChildSceneFloor;
+    // public static GameObject ChildSceneBox;
+    // public static GameObject ChildSceneFloor;
 
-    public static void Active_ChildObject()
-    {
-        ChildSceneBox.SetActive(true);
-        ChildSceneFloor.SetActive(true);
-    }
+    // public static void Active_ChildObject()
+    // {
+    //     ChildSceneBox.SetActive(true);
+    //     ChildSceneFloor.SetActive(true);
+    // }
 }
