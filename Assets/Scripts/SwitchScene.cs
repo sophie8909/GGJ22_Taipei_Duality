@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class ObjectManager : MonoBehaviour
+public class SwitchScene : MonoBehaviour
 {
     public bool age; // true for Adult, false for child
+
+    public bool GetPineApple; // check if get pineapple
+
+    public bool GetMotherboard; // check if get motherboard
     public GameObject ChildBox;
     public GameObject ChildFloor;
 
@@ -34,6 +38,8 @@ public class ObjectManager : MonoBehaviour
     // Start is called before the first frame update
     void Start(){
         age = true;
+        GetMotherboard = false;
+        GetPineApple = false;
         Active_AdultObject();
         Close_ChildObject();
     }
@@ -41,12 +47,12 @@ public class ObjectManager : MonoBehaviour
     // Update is called once per frame
     void Update(){
         if(Input.GetKeyDown("v")){
-            if(age){
+            if(age && GetPineApple){
                 age = false;
                 Close_AdultObject();
                 Active_ChildObject();
             }
-            else{
+            else if (age == false && GetMotherboard){
                 age = true;
                 Close_ChildObject();
                 Active_AdultObject();
