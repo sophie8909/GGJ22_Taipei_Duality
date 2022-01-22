@@ -62,13 +62,13 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision) {
+    public void OnTriggerEnter2D(Collider2D collision) {
         if (collision.CompareTag("Ladder")) {
             isLadder = true;
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision) {
+    public void OnTriggerExit2D(Collider2D collision) {
         if (collision.CompareTag("Ladder")) {
             isLadder = false;
             isClimbing = false;
