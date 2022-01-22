@@ -11,4 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: Assets/StartPageScene.unity
+    guid: e6592f5d85526f74286562e4521fed69
+  - enabled: 0
+    path: Assets/AdultScene.unity
+    guid: 639dcfb8a1cfc9c40b141225b82428c0
+  - enabled: 0
+    path: Assets/ChildScene.unity
+    guid: 93bb585ac187a454db922745fb2ac58c
+  - enabled: 1
+    path: Assets/Scenes/AdultScene.unity
+    guid: 63b2aed49beadbd41983c0fc9b88e6f2
+  - enabled: 1
+    path: Assets/Scenes/ChildScene.unity
+    guid: 3775f33dc445b9342b7a4caf75295130
   m_configObjects: {}
