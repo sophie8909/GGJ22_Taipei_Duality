@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class SwitchScene : MonoBehaviour
+public class ObjectControl : MonoBehaviour
 {
     public bool age; // true for Adult, false for child
 
