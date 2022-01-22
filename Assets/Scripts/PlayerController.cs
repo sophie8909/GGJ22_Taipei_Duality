@@ -15,7 +15,10 @@ public class PlayerController : MonoBehaviour
     public bool isLadder;
     public bool isClimbing;
 
+    [SerializeField] private GameObject AdultPlayer;
+    [SerializeField] private GameObject ChildPlayer;
     [SerializeField] private Rigidbody2D rb;
+
 
     void Start() {
         //rb = GetComponent<Rigidbody2D>();
@@ -29,6 +32,18 @@ public class PlayerController : MonoBehaviour
         }
         if (isLadder && Mathf.Abs(vertical) > 0f) {
             isClimbing = true;
+        }
+        if(Input.GetKeyDown("v")) {
+            AdultPlayer.active = !AdultPlayer.active;
+            ChildPlayer.active = !ChildPlayer.active;
+            if(AdultPlayer.active) {
+                AdultPlayer.transform.position = ChildPlayer.transform.position;
+                rb = AdultPlayer.GetComponent<Rigidbody2D>();
+            }
+            else if (ChildPlayer.active) {
+                ChildPlayer.transform.position = AdultPlayer.transform.position;
+                rb = ChildPlayer.GetComponent<Rigidbody2D>();
+            }
         }
     }
 
@@ -47,13 +62,13 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision) {
+    public void OnTriggerEnter2D(Collider2D collision) {
         if (collision.CompareTag("Ladder")) {
             isLadder = true;
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision) {
+    public void OnTriggerExit2D(Collider2D collision) {
         if (collision.CompareTag("Ladder")) {
             isLadder = false;
             isClimbing = false;
