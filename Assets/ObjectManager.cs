@@ -5,28 +5,28 @@ using UnityEngine;
 
 public class ObjectManager : MonoBehaviour
 {
-    private bool age; // true for Adult, false for child
-    public static GameObject ChildBox;
-    public static GameObject ChildFloor;
+    public bool age; // true for Adult, false for child
+    public GameObject ChildBox;
+    public GameObject ChildFloor;
 
-    public static GameObject AdultFloor;
+    public GameObject AdultFloor;
 
-    public static void Active_ChildObject(){
+    public void Active_ChildObject(){
         ChildBox.SetActive(true);
         ChildFloor.SetActive(true);
     }
 
-    public static void Active_AdultObject()
+    public void Active_AdultObject()
     {
         AdultFloor.SetActive(true);
     }
 
-    public static void Close_ChildObject(){
+    public void Close_ChildObject(){
         ChildBox.SetActive(false);
         ChildFloor.SetActive(false);
     }
 
-    public static void Close_AdultObject()
+    public void Close_AdultObject()
     {
         AdultFloor.SetActive(false);
     }
@@ -40,16 +40,16 @@ public class ObjectManager : MonoBehaviour
 
     // Update is called once per frame
     void Update(){
-        if(Input.GetKey("v")){
+        if(Input.GetKeyDown("v")){
             if(age){
                 age = false;
-                Active_ChildObject();
                 Close_AdultObject();
+                Active_ChildObject();
             }
             else{
                 age = true;
-                Active_AdultObject();
                 Close_ChildObject();
+                Active_AdultObject();
             }
         }
     }
