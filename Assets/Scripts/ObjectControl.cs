@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class ObjectControl : MonoBehaviour
 {
-    public bool age; // true for Adult, false for child
+    public static bool age; // true for Adult, false for child
 
-    public bool GetPineApple; // check if get pineapple
+    public static bool GetPineApple; // check if get pineapple
 
-    public bool GetMotherboard; // check if get motherboard
+    public static bool GetMotherboard; // check if get motherboard
     public GameObject ChildBox;
     public GameObject ChildFloor;
 
