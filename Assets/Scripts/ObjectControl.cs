@@ -47,7 +47,7 @@ public class ObjectControl : MonoBehaviour
     // Update is called once per frame
     void Update(){
         if(Input.GetKeyDown("v")){
-            if(age && GetPineApple){
+            if(age == true && GetPineApple){
                 age = false;
                 Close_AdultObject();
                 Active_ChildObject();
