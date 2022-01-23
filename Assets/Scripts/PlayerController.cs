@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour
                 //age = true;
             }
             else if (AdultPlayer.active && ObjectControl.GetPineApple) {
-                JumpForce = 5f;
+                JumpForce = 0.1f;
                 AdultPlayer.active = false;
                 ChildPlayer.active = true;
                 Player = ChildPlayer;

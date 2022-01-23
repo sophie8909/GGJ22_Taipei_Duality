@@ -687,15 +687,15 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5deea30f0bcf1c64a807f5f225eee5a7, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 6
 --- !u!1001 &423046325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -863,6 +863,37 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &460880786 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5786064397749273588, guid: 04e203d598e614746aab359a3be24f0a, type: 3}
+  m_PrefabInstance: {fileID: 1554947149}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &460880790
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460880786}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 69, y: -3.5}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 138.30049, y: 11.29}
+  m_EdgeRadius: 0
 --- !u!1 &487058218
 GameObject:
   m_ObjectHideFlags: 0
@@ -1717,15 +1748,15 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5deea30f0bcf1c64a807f5f225eee5a7, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 6
 --- !u!61 &753605778
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2291,11 +2322,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4399115193908284739, guid: cc7a2b8234abd484fb3956096c593b97, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.59
+      value: -1.06
       objectReference: {fileID: 0}
     - target: {fileID: 4399115193908284739, guid: cc7a2b8234abd484fb3956096c593b97, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.01
+      value: -3.53
       objectReference: {fileID: 0}
     - target: {fileID: 4399115193908284739, guid: cc7a2b8234abd484fb3956096c593b97, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2333,9 +2364,13 @@ PrefabInstance:
       propertyPath: m_BoundingShape2D
       value: 
       objectReference: {fileID: 153425173}
+    - target: {fileID: 6760957834264477799, guid: cc7a2b8234abd484fb3956096c593b97, type: 3}
+      propertyPath: m_Mass
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 8563919574295524810, guid: cc7a2b8234abd484fb3956096c593b97, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.05741501
+      value: -0.057415366
       objectReference: {fileID: 0}
     - target: {fileID: 8563919574295524810, guid: cc7a2b8234abd484fb3956096c593b97, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2343,11 +2378,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8563919575346360668, guid: cc7a2b8234abd484fb3956096c593b97, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.057422638
+      value: 3.9589834
       objectReference: {fileID: 0}
     - target: {fileID: 8563919575346360668, guid: cc7a2b8234abd484fb3956096c593b97, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.9337349
+      value: 1.9360442
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc7a2b8234abd484fb3956096c593b97, type: 3}
@@ -2554,7 +2589,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 350
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -2831,15 +2866,15 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5deea30f0bcf1c64a807f5f225eee5a7, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 6
 --- !u!1 &1248995300
 GameObject:
   m_ObjectHideFlags: 0
@@ -2938,15 +2973,15 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5deea30f0bcf1c64a807f5f225eee5a7, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 6
 --- !u!61 &1248995304
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3140,7 +3175,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.72, y: 9.03}
+  m_AnchoredPosition: {x: 10.54, y: 9.24}
   m_SizeDelta: {x: 4.1466, y: 5.016}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1420331716
@@ -33337,6 +33372,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5786064397749273588, guid: 04e203d598e614746aab359a3be24f0a, type: 3}
+      propertyPath: m_TagString
+      value: Ladder
+      objectReference: {fileID: 0}
     - target: {fileID: 5786064397749273591, guid: 04e203d598e614746aab359a3be24f0a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.99
@@ -33471,7 +33510,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0008
+  m_Mass: 350
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -33479,7 +33518,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1001 &1591355603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34051,15 +34090,15 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5deea30f0bcf1c64a807f5f225eee5a7, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 6
 --- !u!61 &1695088649
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34349,15 +34388,15 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5deea30f0bcf1c64a807f5f225eee5a7, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 6
 --- !u!1 &1950223238
 GameObject:
   m_ObjectHideFlags: 0
@@ -34533,7 +34572,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0008
+  m_Mass: 500
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -34541,7 +34580,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1998187095
 BoxCollider2D:
   m_ObjectHideFlags: 0

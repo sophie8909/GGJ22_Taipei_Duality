@@ -104,7 +104,7 @@ public class ObjectControl : MonoBehaviour
         ChildHorse.SetActive(false);
         Childrope.SetActive(false);
         ChildStair.SetActive(false);
-        Childlevel3.SetActive(false);
+        //Childlevel3.SetActive(false);
         ChildBackGround.SetActive(false);
     }
 
