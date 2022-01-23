@@ -231,8 +231,9 @@ MonoBehaviour:
   JumpForce: 10
   climbSpeed: 5
   Jumping: 0
-  isLadder: 0
-  isClimbing: 0
+  inLadder: 0
+  onLadder: 0
+  myAnimator: {fileID: 0}
   AdultPlayer: {fileID: 0}
   ChildPlayer: {fileID: 0}
   rb: {fileID: 297850444}
@@ -785,8 +786,9 @@ MonoBehaviour:
   JumpForce: 10
   climbSpeed: 4
   Jumping: 0
-  isLadder: 0
-  isClimbing: 0
+  inLadder: 0
+  onLadder: 0
+  myAnimator: {fileID: 0}
   AdultPlayer: {fileID: 1619848054}
   ChildPlayer: {fileID: 297850441}
   rb: {fileID: 1619848055}
@@ -1135,8 +1137,9 @@ MonoBehaviour:
   JumpForce: 10
   climbSpeed: 5
   Jumping: 0
-  isLadder: 0
-  isClimbing: 0
+  inLadder: 0
+  onLadder: 0
+  myAnimator: {fileID: 0}
   AdultPlayer: {fileID: 0}
   ChildPlayer: {fileID: 0}
   rb: {fileID: 1619848055}
@@ -1268,11 +1271,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4399115193908284739, guid: cc7a2b8234abd484fb3956096c593b97, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4399115193908284739, guid: cc7a2b8234abd484fb3956096c593b97, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.78
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4399115193908284739, guid: cc7a2b8234abd484fb3956096c593b97, type: 3}
       propertyPath: m_LocalPosition.z
