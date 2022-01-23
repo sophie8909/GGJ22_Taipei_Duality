@@ -1,0 +1,400 @@
+fileFormatVersion: 2
+guid: ab0a1e98d83ea424aba6d7ce569b09bd
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 1200, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ChildJump_Run_0
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 1292
+        width: 362
+        height: 533
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22336d7047d13614faa51b2f7d3c7acb
+      internalID: -1397151662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChildJump_Run_2
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 1504
+        width: 294
+        height: 379
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 718ffa0d796865546a09823050811b84
+      internalID: -357880409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChildJump_Run_3
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 1295
+        width: 385
+        height: 599
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a8b6ba3d0b8fe845935a8fc6999455f
+      internalID: 1369191250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChildJump_Run_4
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1294
+        width: 288
+        height: 526
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc3b647d9200c14ca5882b6e8f13b61
+      internalID: -815917035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChildJump_Run_8
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 1266
+        width: 318
+        height: 530
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fede18c498a61cf4880c2ca41711e211
+      internalID: -40739629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChildJump_Run_12
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1294
+        width: 326
+        height: 368
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe817b1c69e4f2248bf63fcaac693d12
+      internalID: -808788033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChildJump_Run_13
+      rect:
+        serializedVersion: 2
+        x: 1892
+        y: 1287
+        width: 311
+        height: 381
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c035847365348a24b9bee5520542e703
+      internalID: -196688683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChildJump_Run_16
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 660
+        width: 360
+        height: 475
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82974407b2649a44b78cd7eecb256df
+      internalID: -21499121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChildJump_Run_17
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 660
+        width: 308
+        height: 476
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a56a29a65df9749989e15315c258d4
+      internalID: 258481256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChildJump_Run_19
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 647
+        width: 301
+        height: 486
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2fd252947248474090b06181b605acb
+      internalID: -1132811373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChildJump_Run_22
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 660
+        width: 289
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb994d48ca43b314bbfb41694302d89f
+      internalID: -691141653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChildJump_Run_24
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 646
+        width: 304
+        height: 491
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda90e5256c0f8044b259aed33a411d1
+      internalID: 873151281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ChildJump_Run_21: -855983351
+      ChildJump_Run_1: -2147406981
+      ChildJump_Run_3: 1369191250
+      ChildJump_Run_23: -1759817785
+      ChildJump_Run_2: -357880409
+      ChildJump_Run_6: 408221619
+      ChildJump_Run_12: -808788033
+      ChildJump_Run_14: 2056922937
+      ChildJump_Run_20: -238315535
+      ChildJump_Run_5: -656536558
+      ChildJump_Run_17: 258481256
+      ChildJump_Run_13: -196688683
+      ChildJump_Run_19: -1132811373
+      ChildJump_Run_15: 1152994299
+      ChildJump_Run_8: -40739629
+      ChildJump_Run_22: -691141653
+      ChildJump_Run_9: 670262996
+      ChildJump_Run_24: 873151281
+      ChildJump_Run_11: -856835188
+      ChildJump_Run_4: -815917035
+      ChildJump_Run_25: -937443066
+      ChildJump_Run_0: -1397151662
+      ChildJump_Run_10: -1310948559
+      ChildJump_Run_16: -21499121
+      ChildJump_Run_7: -380698830
+      ChildJump_Run_18: -740011108
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

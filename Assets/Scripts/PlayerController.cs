@@ -5,21 +5,24 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 8f;
-    public float JumpForce = 2f;
+    public float JumpForce = 10f;
     public float climbSpeed = 4f;
 
     private float vertical;
     private float horizontal;
 
     public bool Jumping = false;
-    public bool isLadder;
-    public bool isClimbing;
+    public bool inLadder;
+    public bool onLadder;
 
+    [SerializeField] private Animator myAnimator;
     [SerializeField] private GameObject AdultPlayer;
     [SerializeField] private GameObject ChildPlayer;
     [SerializeField] private Rigidbody2D rb;
+    private GameObject Player;
 
     void Start() {
+        Player = ChildPlayer;
         //rb = GetComponent<Rigidbody2D>();
     }
 
@@ -29,37 +32,38 @@ public class PlayerController : MonoBehaviour
         if(Input.GetAxisRaw("Jump") > 0 && Mathf.Abs(rb.velocity.y) < 0.01f) {
             Jumping = true;
         }
-        if (isLadder && Mathf.Abs(vertical) > 0f) {
-            isClimbing = true;
+        if (inLadder && Mathf.Abs(vertical) > 0f) {
+            onLadder = true;
+            myAnimator.SetBool("onLadder", true);
+        }
+        if (onLadder && Mathf.Abs(rb.velocity.y) < 0.01f) {
+            myAnimator.SetBool("isClimbing", false);
         }
         if(Input.GetKeyDown("v")) {
-            if (ObjectControl.GetPineApple & ObjectControl.GetMotherboard) {
-                AdultPlayer.active = !AdultPlayer.active;
-                ChildPlayer.active = !ChildPlayer.active;
-            }
-            else if (ObjectControl.GetPineApple) {
-                AdultPlayer.active = false;
-                ChildPlayer.active = true;
-            }
-            else if (ObjectControl.GetMotherboard) {
+            if(ObjectControl.age) {
+                JumpForce = 10f;
                 AdultPlayer.active = true;
                 ChildPlayer.active = false;
+                Player = AdultPlayer;
+                Player.transform.position = ChildPlayer.transform.position;
+                rb = Player.GetComponent<Rigidbody2D>();
             }
-            if(AdultPlayer.active) {
-                AdultPlayer.transform.position = ChildPlayer.transform.position;
-                rb = AdultPlayer.GetComponent<Rigidbody2D>();
-            }
-            else if (ChildPlayer.active) {
-                ChildPlayer.transform.position = AdultPlayer.transform.position;
-                rb = ChildPlayer.GetComponent<Rigidbody2D>();
+            else {
+                JumpForce = 5f;
+                AdultPlayer.active = false;
+                ChildPlayer.active = true;
+                Player = ChildPlayer;
+                Player.transform.position = AdultPlayer.transform.position;
+                rb = Player.GetComponent<Rigidbody2D>();
             }
         }
     }
 
     private void FixedUpdate() {
-        if (isClimbing) {
+        if (onLadder) {
             rb.gravityScale = 0f;
             rb.velocity = new Vector2(rb.velocity.x, vertical * climbSpeed);
+            myAnimator.SetBool("isClimbing", true);
         }
         else {
             rb.gravityScale = 4f;
@@ -68,19 +72,27 @@ public class PlayerController : MonoBehaviour
             rb.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
             Jumping = false;
         }
+        if(horizontal < 0) {
+            Player.transform.localRotation = Quaternion.Euler(0, 180, 0);
+        }
+        if(horizontal > 0) {
+            Player.transform.localRotation = Quaternion.Euler(0, 0, 0);
+        }
         rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y);
     }
 
     public void OnTriggerEnter2D(Collider2D collision) {
         if (collision.CompareTag("Ladder")) {
-            isLadder = true;
+            inLadder = true;
         }
     }
 
     public void OnTriggerExit2D(Collider2D collision) {
         if (collision.CompareTag("Ladder")) {
-            isLadder = false;
-            isClimbing = false;
+            inLadder = false;
+            onLadder = false;
+            myAnimator.SetBool("onLadder", false);
+            myAnimator.SetBool("isClimbing", false);
         }
     }
 
