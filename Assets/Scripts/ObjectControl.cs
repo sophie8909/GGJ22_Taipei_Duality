@@ -10,29 +10,29 @@ public class ObjectControl : MonoBehaviour
     public static bool GetPineApple; // check if get pineapple
 
     public static bool GetMotherboard; // check if get motherboard
-    public GameObject ChildBox;
-    public GameObject ChildFloor;
+    // public GameObject ChildBox;
+    // public GameObject ChildFloor;
 
-    public GameObject AdultFloor;
+    // public GameObject AdultFloor;
 
     public void Active_ChildObject(){
-        ChildBox.SetActive(true);
-        ChildFloor.SetActive(true);
+        // ChildBox.SetActive(true);
+        // ChildFloor.SetActive(true);
     }
 
     public void Active_AdultObject()
     {
-        AdultFloor.SetActive(true);
+        // AdultFloor.SetActive(true);
     }
 
     public void Close_ChildObject(){
-        ChildBox.SetActive(false);
-        ChildFloor.SetActive(false);
+        // ChildBox.SetActive(false);
+        // ChildFloor.SetActive(false);
     }
 
     public void Close_AdultObject()
     {
-        AdultFloor.SetActive(false);
+        // AdultFloor.SetActive(false);
     }
 
     // Start is called before the first frame update
@@ -47,7 +47,7 @@ public class ObjectControl : MonoBehaviour
     // Update is called once per frame
     void Update(){
         if(Input.GetKeyDown("v")){
-            if(age == true && GetPineApple){
+            if(age == true && GetPineApple == true ){
                 age = false;
                 Close_AdultObject();
                 Active_ChildObject();
