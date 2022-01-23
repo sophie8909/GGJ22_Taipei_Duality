@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -15,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public bool inLadder;
     public bool onLadder;
 
+    [SerializeField] private CinemachineVirtualCamera virtualCam;
     [SerializeField] private Animator myAnimator;
     [SerializeField] private GameObject AdultPlayer;
     [SerializeField] private GameObject ChildPlayer;
@@ -23,6 +25,7 @@ public class PlayerController : MonoBehaviour
 
     void Start() {
         Player = ChildPlayer;
+        virtualCam = GetComponentInChildren<CinemachineVirtualCamera>();
         //rb = GetComponent<Rigidbody2D>();
     }
 
@@ -47,6 +50,8 @@ public class PlayerController : MonoBehaviour
                 Player = AdultPlayer;
                 Player.transform.position = ChildPlayer.transform.position;
                 rb = Player.GetComponent<Rigidbody2D>();
+                virtualCam.Follow = AdultPlayer.transform;
+                virtualCam.LookAt = AdultPlayer.transform;
             }
             else {
                 JumpForce = 5f;
@@ -55,6 +60,8 @@ public class PlayerController : MonoBehaviour
                 Player = ChildPlayer;
                 Player.transform.position = AdultPlayer.transform.position;
                 rb = Player.GetComponent<Rigidbody2D>();
+                virtualCam.Follow = ChildPlayer.transform;
+                virtualCam.LookAt = ChildPlayer.transform;
             }
         }
     }
