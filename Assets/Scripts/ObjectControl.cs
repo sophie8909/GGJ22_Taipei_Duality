@@ -10,6 +10,8 @@ public class ObjectControl : MonoBehaviour
     public static bool GetPineApple; // check if get pineapple
 
     public static bool GetMotherboard; // check if get motherboard
+
+    public static bool GetMemory;
     // public GameObject ChildBox;
     // public GameObject ChildFloor;
 

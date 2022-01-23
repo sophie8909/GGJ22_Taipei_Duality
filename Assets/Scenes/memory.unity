@@ -307,7 +307,7 @@ GameObject:
   - component: {fileID: 578161287}
   - component: {fileID: 578161286}
   m_Layer: 0
-  m_Name: Pineapple
+  m_Name: memory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -354,7 +354,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a5a711bcad4253b4ca8f079a45c7a2fc, type: 3}
+  m_Sprite: {fileID: 1691456576, guid: 9ebb50ddbdb176346a8f887564151fad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -420,7 +420,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -55.05, y: 4.87}
+  m_AnchoredPosition: {x: -55.03, y: 4.58}
   m_SizeDelta: {x: 6.8051, y: 6.5483}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &578161286
@@ -440,7 +440,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    oldSize: {x: 1.4805623, y: 1.3000001}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -458,7 +458,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 578161281}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5b8112aa0b33944846a77f02dda25a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6fa4fab0c02228a498899416f6140631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Canvas: {fileID: 448776007}
@@ -573,7 +573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiText: {fileID: 781250917}
-  textAsset: {fileID: 4900000, guid: c1232ed84f8be654dab5d5ae83e23f2f, type: 3}
+  textAsset: {fileID: 4900000, guid: 88da05e7a9da89944a0eae7807a8b8df, type: 3}
   Canvas: {fileID: 448776007}
 --- !u!114 &1396400746
 MonoBehaviour:
