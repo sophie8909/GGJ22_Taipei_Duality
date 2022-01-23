@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
 
@@ -17,8 +18,20 @@ public class PasswordLock : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Reset();
         canvasGroup.alpha = 0.0f;
         inputField.onSubmit.AddListener(OnSubmit);
+    }
+
+    [Button]
+    public void Reset()
+    {
+        foreach (var obj in openObjList)
+            obj.SetActive(false); 
+        foreach (var obj in closeObjList)
+            obj.SetActive(true);
+        inputField.text = "";
+        isPassed = false;
     }
 
     private void OnSubmit(string inputStr)
