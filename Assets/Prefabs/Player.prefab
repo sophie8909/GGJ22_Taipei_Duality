@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 2804783463930221628}
   m_LocalRotation: {x: 0.000038000373, y: 0.008726475, z: 0.0043544006, w: 0.9999525}
   m_LocalPosition: {x: 0, y: 0, z: 0.025316088}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 4399115193908284739}
@@ -222,6 +222,7 @@ MonoBehaviour:
   Jumping: 0
   inLadder: 0
   onLadder: 0
+  virtualCam: {fileID: 0}
   myAnimator: {fileID: 216663876}
   AdultPlayer: {fileID: 4399115194233412640}
   ChildPlayer: {fileID: 2804783463930221628}
@@ -276,7 +277,7 @@ Transform:
   m_GameObject: {fileID: 4399115194233412640}
   m_LocalRotation: {x: 0.000038000373, y: 0.008726475, z: 0.0043544006, w: 0.9999525}
   m_LocalPosition: {x: -0.04, y: -0.02, z: 0.025316088}
-  m_LocalScale: {x: 0.23, y: 0.23, z: 0.23}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 4399115193908284739}
@@ -323,12 +324,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1685741419, guid: b5883b560ecd59a4a8125ac998c910ed, type: 3}
+  m_Sprite: {fileID: -1780967669, guid: b5883b560ecd59a4a8125ac998c910ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.6404307, y: 6.51}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -347,18 +348,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.017787367, y: 3.8738403}
+  m_Offset: {x: -0.017787337, y: 3.2535913}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 3.1705172, y: 7.69}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 2.6404307, y: 6.51}
+    newSize: {x: 2.6404307, y: 6.51}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6091473, y: 7.600708}
+  m_Size: {x: 1.6091473, y: 6.36021}
   m_EdgeRadius: 0
 --- !u!50 &4399115194233412641
 Rigidbody2D:
@@ -427,11 +428,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5464533811717677020, guid: 084b689f94753974b87ce8b5c47e2998, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.057415485
+      value: -0.05741501
       objectReference: {fileID: 0}
     - target: {fileID: 5464533811717677020, guid: 084b689f94753974b87ce8b5c47e2998, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.979924
+      value: 1.9799242
       objectReference: {fileID: 0}
     - target: {fileID: 5464533811717677020, guid: 084b689f94753974b87ce8b5c47e2998, type: 3}
       propertyPath: m_LocalPosition.z
@@ -451,11 +452,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5464533812780571466, guid: 084b689f94753974b87ce8b5c47e2998, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.9969325
+      value: -0.05741501
       objectReference: {fileID: 0}
     - target: {fileID: 5464533812780571466, guid: 084b689f94753974b87ce8b5c47e2998, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.9526279
+      value: 1.9799242
       objectReference: {fileID: 0}
     - target: {fileID: 5464533812780571466, guid: 084b689f94753974b87ce8b5c47e2998, type: 3}
       propertyPath: m_LocalPosition.z

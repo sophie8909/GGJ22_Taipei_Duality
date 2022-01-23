@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
             myAnimator.SetBool("isRunning", false);
         }
         if(Input.GetKeyDown("v")) {
-            if(ObjectControl.age) {
+            if(ObjectControl.age && ChildPlayer.active) {
                 JumpForce = 100f;
                 AdultPlayer.active = true;
                 ChildPlayer.active = false;
@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
                 virtualCam.Follow = AdultPlayer.transform;
                 virtualCam.LookAt = AdultPlayer.transform;
             }
-            else {
+            else if (!ObjectControl.age && AdultPlayer.active) {
                 JumpForce = 5f;
                 AdultPlayer.active = false;
                 ChildPlayer.active = true;

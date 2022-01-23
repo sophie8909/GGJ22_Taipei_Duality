@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AdultIdle_1
+      name: AdultIdle_0
       rect:
         serializedVersion: 2
-        x: 1133
-        y: 929
-        width: 317
-        height: 769
+        x: 1132
+        y: 1047
+        width: 264
+        height: 651
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,8 +118,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b62e220f84c7cee42bca158ce5d813a4
-      internalID: 1685741419
+      spriteID: cfec422e19265b0469767c3486b5fcd9
+      internalID: -1780967669
       vertices: []
       indices: 
       edges: []
@@ -135,10 +135,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      AdultIdle_1: 1685741419
-      AdultIdle_3: 157051076
-      AdultIdle_0: 1461598924
-      AdultIdle_2: 852874723
+      AdultIdle_1: 1599338603
+      AdultIdle_0: -1780967669
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
