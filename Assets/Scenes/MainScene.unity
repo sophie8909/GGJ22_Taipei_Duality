@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2639897505569213221, guid: cc7a2b8234abd484fb3956096c593b97, type: 3}
+      propertyPath: obctrl
+      value: 
+      objectReference: {fileID: 1108920345}
     - target: {fileID: 4399115193908284738, guid: cc7a2b8234abd484fb3956096c593b97, type: 3}
       propertyPath: m_Name
       value: Player
@@ -180,23 +184,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8563919574295524810, guid: cc7a2b8234abd484fb3956096c593b97, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.0098474
+      value: -0.017415404
       objectReference: {fileID: 0}
     - target: {fileID: 8563919574295524810, guid: cc7a2b8234abd484fb3956096c593b97, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9942261
+      value: 1.9999242
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563919574295524810, guid: cc7a2b8234abd484fb3956096c593b97, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.97438
       objectReference: {fileID: 0}
     - target: {fileID: 8563919575346360668, guid: cc7a2b8234abd484fb3956096c593b97, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.0098474
+      value: -0.017415404
       objectReference: {fileID: 0}
     - target: {fileID: 8563919575346360668, guid: cc7a2b8234abd484fb3956096c593b97, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9942261
+      value: 1.9999242
       objectReference: {fileID: 0}
     - target: {fileID: 8563919575346360668, guid: cc7a2b8234abd484fb3956096c593b97, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.974684
+      value: -9.97438
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc7a2b8234abd484fb3956096c593b97, type: 3}
@@ -244,9 +252,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa28fe38531c47419eb7864e4904c3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  age: 0
-  GetPineApple: 0
-  GetMotherboard: 0
   ChildBox: {fileID: 2128753553}
   ChildFloor: {fileID: 1141423377}
   AdultFloor: {fileID: 1125218061}

@@ -130,7 +130,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: dfd19a3434ad2f5419c2e5dbc9f14a08, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8
-  JumpForce: 10
+  JumpForce: 0.001
   climbSpeed: 4
   Jumping: 0
   isLadder: 0
@@ -351,11 +351,11 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.0001
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: dfd19a3434ad2f5419c2e5dbc9f14a08, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -407,15 +407,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5464533811717677020, guid: 084b689f94753974b87ce8b5c47e2998, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.017415524
       objectReference: {fileID: 0}
     - target: {fileID: 5464533811717677020, guid: 084b689f94753974b87ce8b5c47e2998, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.9999242
       objectReference: {fileID: 0}
     - target: {fileID: 5464533811717677020, guid: 084b689f94753974b87ce8b5c47e2998, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.974684
+      value: -9.97438
       objectReference: {fileID: 0}
     - target: {fileID: 5464533811717677021, guid: 084b689f94753974b87ce8b5c47e2998, type: 3}
       propertyPath: m_Follow
@@ -431,15 +431,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5464533812780571466, guid: 084b689f94753974b87ce8b5c47e2998, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.017415524
       objectReference: {fileID: 0}
     - target: {fileID: 5464533812780571466, guid: 084b689f94753974b87ce8b5c47e2998, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.9999242
       objectReference: {fileID: 0}
     - target: {fileID: 5464533812780571466, guid: 084b689f94753974b87ce8b5c47e2998, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.974684
+      value: -9.97438
       objectReference: {fileID: 0}
     - target: {fileID: 5505491982240974055, guid: 084b689f94753974b87ce8b5c47e2998, type: 3}
       propertyPath: m_RootOrder

@@ -19,7 +19,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject ChildPlayer;
     [SerializeField] private Rigidbody2D rb;
 
-
     void Start() {
         //rb = GetComponent<Rigidbody2D>();
     }
@@ -34,8 +33,18 @@ public class PlayerController : MonoBehaviour
             isClimbing = true;
         }
         if(Input.GetKeyDown("v")) {
-            AdultPlayer.active = !AdultPlayer.active;
-            ChildPlayer.active = !ChildPlayer.active;
+            if (ObjectControl.GetPineApple & ObjectControl.GetMotherboard) {
+                AdultPlayer.active = !AdultPlayer.active;
+                ChildPlayer.active = !ChildPlayer.active;
+            }
+            else if (ObjectControl.GetPineApple) {
+                AdultPlayer.active = false;
+                ChildPlayer.active = true;
+            }
+            else if (ObjectControl.GetMotherboard) {
+                AdultPlayer.active = true;
+                ChildPlayer.active = false;
+            }
             if(AdultPlayer.active) {
                 AdultPlayer.transform.position = ChildPlayer.transform.position;
                 rb = AdultPlayer.GetComponent<Rigidbody2D>();
@@ -74,78 +83,5 @@ public class PlayerController : MonoBehaviour
             isClimbing = false;
         }
     }
-    //public float moveSpeed;
-    //public float JumpForce;
-    //public float climbSpeed;
-    
-    //public bool Jumping = false;
-    //public bool EnterLadder = false;
-    //public bool OnLadder = false;
-
-
-    
-
-    //private Rigidbody2D _rigidbody;
-    // Start is called before the first frame update
-    //void Start()
-    //{
-    //    _rigidbody = GetComponent<Rigidbody2D>();
-    //    gravityStore = _rigidbody.gravityScale;
-    //}
-
-    // Update is called once per frame
-    //void Update()
-    //{
-    //    Movement();
-    //}
-
-    //private void Movement() {
-    //    if (Input.GetKey("a")) {
-    //        //_rigidbody.velocity = new Vector2(_rigidbody.velocity.x, -moveSpeed);
-    //        this.gameObject.transform.Translate(new Vector2(-moveSpeed, 0) * Time.deltaTime);
-    //    }
-    //    if (Input.GetKey("d")) {
-    //        //_rigidbody.velocity = new Vector2(_rigidbody.velocity.x, moveSpeed);
-    //        this.gameObject.transform.Translate(new Vector2(moveSpeed, 0) * Time.deltaTime);
-    //    }
-    //    if (EnterLadder && Input.GetKey("w")) {
-    //        OnLadder = true;
-    //        this.gameObject.transform.Translate(new Vector2(0, climbSpeed) * Time.deltaTime);
-    //    }
-    //    if (EnterLadder && Input.GetKey("s")) {
-    //        OnLadder = true;
-    //        this.gameObject.transform.Translate(new Vector2(0, -climbSpeed) * Time.deltaTime);
-    //    }
-    //    if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.velocity.y) < 0.01f)
-    //    {
-    //        Jumping = true;
-    //        OnLadder = false;
-    //    }
-    //    if(Input.GetButtonDown("Jump")) {
-    //        Debug.Log("Jump");
-    //        Debug.Log(Mathf.Abs(_rigidbody.velocity.y));
-    //    }
-    //    if (OnLadder) {
-    //        _rigidbody.gravityScale = 0f;
-    //        _rigidbody.velocity = new Vector2(0f, 0f);
-    //        Jumping = false;
-    //    }
-    //    if (!OnLadder) {
-    //        _rigidbody.gravityScale = gravityStore;
-    //    }
-    //    if (!EnterLadder) {
-    //        OnLadder = false;
-    //    }
-    //}
-
-    //private void FixedUpdate()
-    //{
-    //    if (Jumping == true)
-    //    {
-    //        _rigidbody.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
-    //        Jumping = false;
-    //    }
-    //}
-
 
 }
