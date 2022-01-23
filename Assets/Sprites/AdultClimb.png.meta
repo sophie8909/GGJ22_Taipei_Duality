@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 78b4972cbcd8de04ab119cb8fcc23a4a
+guid: b664905df3c28b244bbf9d375639e169
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AdultJump_1
+      name: AdultClimb_1
       rect:
         serializedVersion: 2
-        x: 153
-        y: 714
-        width: 256
-        height: 582
+        x: 358
+        y: 779
+        width: 359
+        height: 560
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6280b7faf32cb9a4a9e981bcc3b80ef5
-      internalID: 405260391
+      spriteID: 6d8a2018b13f8584aa4b30a5ee471953
+      internalID: 990091073
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AdultJump_2
+      name: AdultClimb_2
       rect:
         serializedVersion: 2
-        x: 480
-        y: 684
-        width: 257
-        height: 364
+        x: 928
+        y: 776
+        width: 271
+        height: 599
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8a581910a444a14482cc744b6e55a44
-      internalID: 1216121040
+      spriteID: e3e5db28cc22381418cfd18398967f75
+      internalID: -545916402
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AdultJump_4
+      name: AdultClimb_3
       rect:
         serializedVersion: 2
-        x: 832
-        y: 692
-        width: 340
-        height: 610
+        x: 1433
+        y: 755
+        width: 302
+        height: 670
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 514bdaaffded508408ea41ea2dd0ba87
-      internalID: 1690126124
+      spriteID: 372a423b8bbba3141b55fd1deccabdb9
+      internalID: 329330468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AdultJump_5
+      name: AdultClimb_4
       rect:
         serializedVersion: 2
-        x: 1160
-        y: 968
-        width: 296
-        height: 379
+        x: 1978
+        y: 763
+        width: 282
+        height: 659
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,71 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bf83f21b61eed64fb6905dfe67cca88
-      internalID: 1477040324
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AdultJump_6
-      rect:
-        serializedVersion: 2
-        x: 1467
-        y: 704
-        width: 457
-        height: 648
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87b28705cd96ed04c96e4c926245767e
-      internalID: 291570286
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AdultJump_7
-      rect:
-        serializedVersion: 2
-        x: 1943
-        y: 689
-        width: 315
-        height: 370
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec1b968f8b6f9e34db129f76537d302f
-      internalID: -1412887046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AdultJump_8
-      rect:
-        serializedVersion: 2
-        x: 2288
-        y: 679
-        width: 262
-        height: 542
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd1e23e7051ee154db5bd8755037f9af
-      internalID: 28440269
+      spriteID: 0f9d67ad5bd00464199be88f5d234b94
+      internalID: -285416635
       vertices: []
       indices: 
       edges: []
@@ -261,15 +198,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      AdultJump_4: 1690126124
-      AdultJump_2: 1216121040
-      AdultJump_5: 1477040324
-      AdultJump_7: -1412887046
-      AdultJump_1: 405260391
-      AdultJump_0: -1582568565
-      AdultJump_8: 28440269
-      AdultJump_6: 291570286
-      AdultJump_3: 1484811321
+      AdultClimb_1: 990091073
+      AdultClimb_3: 329330468
+      AdultClimb_2: -545916402
+      AdultClimb_4: -285416635
+      AdultClimb_0: 610815690
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

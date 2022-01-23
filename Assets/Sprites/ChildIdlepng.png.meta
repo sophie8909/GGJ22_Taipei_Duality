@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a8716b84d12e319409b982746c217b3e
+guid: 668be3818c68303439995bffa66a7828
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,8 +45,8 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ChildClimb_1
+      name: ChildIdlepng_0
       rect:
         serializedVersion: 2
-        x: 329
-        y: 474
-        width: 325
-        height: 505
+        x: 1149
+        y: 953
+        width: 351
+        height: 522
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,71 +118,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ae33cf2fdbf9cc45a09698b53ede6d4
-      internalID: -1678119657
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChildClimb_2
-      rect:
-        serializedVersion: 2
-        x: 713
-        y: 473
-        width: 292
-        height: 488
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 928da97fe6c29bc4fb9906aa101b8fc5
-      internalID: 1682484865
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChildClimb_4
-      rect:
-        serializedVersion: 2
-        x: 1055
-        y: 468
-        width: 278
-        height: 514
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 01d344c8c5d604e468b32e7305425179
-      internalID: -519163774
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChildClimb_5
-      rect:
-        serializedVersion: 2
-        x: 1416
-        y: 434
-        width: 313
-        height: 557
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eeb6b0c607c37d641b5acee9daa3f082
-      internalID: 1900847934
+      spriteID: f64c55fdf33c0df4a9091422d9c9fe73
+      internalID: 1605282787
       vertices: []
       indices: 
       edges: []
@@ -198,13 +135,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ChildClimb_3: -747523622
-      ChildClimb_0: -1690811874
-      ChildClimb_6: 2020329623
-      ChildClimb_5: 1900847934
-      ChildClimb_4: -519163774
-      ChildClimb_2: 1682484865
-      ChildClimb_1: -1678119657
+      ChildIdlepng_1: 620801721
+      ChildIdlepng_0: 1605282787
+      ChildIdlepng_3: 757766181
+      ChildIdlepng_2: -1299334889
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
