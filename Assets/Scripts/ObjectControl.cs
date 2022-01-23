@@ -32,6 +32,13 @@ public class ObjectControl : MonoBehaviour
     public GameObject AdultHorse;
     public GameObject ChildHorse;
 
+    public GameObject ChildStair;
+
+    public GameObject Adultrope;
+    public GameObject Childrope;
+    public GameObject Childlevel3;
+    public GameObject ChildBackGround;
+    public GameObject AdultBackGround;
 
     private Vector3 getpos(GameObject obj)
     {
@@ -55,6 +62,12 @@ public class ObjectControl : MonoBehaviour
         ChildBlackBoard.transform.position = getpos(AdultBlackBoard);
         ChildHorse.SetActive(true);
         ChildHorse.transform.position = getpos(AdultHorse);
+
+        ChildStair.SetActive(true);
+        Childrope.SetActive(true);
+        Childlevel3.SetActive(true);
+        ChildBackGround.SetActive(true);
+
     }
 
     public void Active_AdultObject()
@@ -76,6 +89,8 @@ public class ObjectControl : MonoBehaviour
         AdultBlackBoard.transform.position = getpos(ChildBlackBoard);
         AdultHorse.SetActive(true);
         AdultHorse.transform.position = getpos(ChildHorse);
+        Adultrope.SetActive(true);
+        AdultBackGround.SetActive(true);
     }
 
     public void Close_ChildObject(){
@@ -87,6 +102,10 @@ public class ObjectControl : MonoBehaviour
         ChildBox.SetActive(false);
         ChildBlackBoard.SetActive(false);
         ChildHorse.SetActive(false);
+        Childrope.SetActive(false);
+        ChildStair.SetActive(false);
+        Childlevel3.SetActive(false);
+        ChildBackGround.SetActive(false);
     }
 
     public void Close_AdultObject()
@@ -99,6 +118,8 @@ public class ObjectControl : MonoBehaviour
         AdultBox.SetActive(false);
         AdultBlackBoard.SetActive(false);
         AdultHorse.SetActive(false);
+        Adultrope.SetActive(false);
+        AdultBackGround.SetActive(false);
     }
 
     // Start is called before the first frame update
