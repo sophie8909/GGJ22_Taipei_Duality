@@ -14,16 +14,7 @@ public class MemoryControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (ObjectControl.GetMemory == false)
-        {
-            Canvas.SetActive(true);
-            ObjectControl.GetMemory = true;
-        }
+        Canvas.SetActive(true);
     }
 
 }
