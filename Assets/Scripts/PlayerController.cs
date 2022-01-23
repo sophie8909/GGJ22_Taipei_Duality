@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     private GameObject Player;
     private float clock;
+    //private bool age = true;
 
     void Start() {
         Player = AdultPlayer;
@@ -51,7 +52,8 @@ public class PlayerController : MonoBehaviour
             myAnimator.SetBool("isRunning", false);
         }
         if(Input.GetKeyDown("v")) {
-            if(ObjectControl.age && ChildPlayer.active) {
+
+            if(ChildPlayer.active && ObjectControl.GetMotherboard) {
                 JumpForce = 100f;
                 AdultPlayer.active = true;
                 ChildPlayer.active = false;
@@ -60,8 +62,10 @@ public class PlayerController : MonoBehaviour
                 rb = Player.GetComponent<Rigidbody2D>();
                 virtualCam.Follow = AdultPlayer.transform;
                 virtualCam.LookAt = AdultPlayer.transform;
+                myAnimator = AdultPlayer.GetComponent<Animator>();
+                //age = true;
             }
-            else if (!ObjectControl.age && AdultPlayer.active) {
+            else if (AdultPlayer.active && ObjectControl.GetPineApple) {
                 JumpForce = 5f;
                 AdultPlayer.active = false;
                 ChildPlayer.active = true;
@@ -70,6 +74,8 @@ public class PlayerController : MonoBehaviour
                 rb = Player.GetComponent<Rigidbody2D>();
                 virtualCam.Follow = ChildPlayer.transform;
                 virtualCam.LookAt = ChildPlayer.transform;
+                myAnimator = ChildPlayer.GetComponent<Animator>();
+                //age = false;
             }
         }
         clock -= Time.deltaTime;
