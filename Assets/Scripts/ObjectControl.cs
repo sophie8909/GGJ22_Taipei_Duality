@@ -26,6 +26,9 @@ public class ObjectControl : MonoBehaviour
     public GameObject Childbike;
     public GameObject Adultbike;
 
+    public GameObject ChildBlackBoard;
+    public GameObject AdultBlackBoard;
+
 
     private Vector3 getpos(GameObject obj)
     {
@@ -45,6 +48,8 @@ public class ObjectControl : MonoBehaviour
         Childrock2.transform.position = getpos(Adultrock2);
         ChildBox.SetActive(true);
         ChildBox.transform.position = getpos(AdultBox);
+        ChildBlackBoard.SetActive(true);
+        ChildBlackBoard.transform.position = getpos(AdultBlackBoard);
     }
 
     public void Active_AdultObject()
@@ -62,6 +67,8 @@ public class ObjectControl : MonoBehaviour
         Adultrock2.transform.position = getpos(Childrock2);
         AdultBox.SetActive(true);
         AdultBox.transform.position = getpos(ChildBox);
+        AdultBlackBoard.SetActive(true);
+        AdultBlackBoard.transform.position = getpos(ChildBlackBoard);
     }
 
     public void Close_ChildObject(){
@@ -71,6 +78,7 @@ public class ObjectControl : MonoBehaviour
         Childrock1.SetActive(false);
         Childrock2.SetActive(false);
         ChildBox.SetActive(false);
+        ChildBlackBoard.SetActive(false);
     }
 
     public void Close_AdultObject()
@@ -81,6 +89,7 @@ public class ObjectControl : MonoBehaviour
         Adultrock1.SetActive(false);
         Adultrock2.SetActive(false);
         AdultBox.SetActive(false);
+        AdultBlackBoard.SetActive(false);
     }
 
     // Start is called before the first frame update
