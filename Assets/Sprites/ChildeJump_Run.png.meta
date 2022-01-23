@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ab0a1e98d83ea424aba6d7ce569b09bd
+guid: 6fc821b2cac02b84a8bd0729a797fd9f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 1200, z: 0, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -104,253 +104,253 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ChildJump_Run_0
+      name: ChildeJump_Run_0
       rect:
         serializedVersion: 2
-        x: 783
-        y: 1292
-        width: 362
-        height: 533
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22336d7047d13614faa51b2f7d3c7acb
-      internalID: -1397151662
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChildJump_Run_2
-      rect:
-        serializedVersion: 2
-        x: 1141
-        y: 1504
-        width: 294
-        height: 379
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 718ffa0d796865546a09823050811b84
-      internalID: -357880409
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChildJump_Run_3
-      rect:
-        serializedVersion: 2
-        x: 1444
-        y: 1295
-        width: 385
-        height: 599
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8a8b6ba3d0b8fe845935a8fc6999455f
-      internalID: 1369191250
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChildJump_Run_4
-      rect:
-        serializedVersion: 2
-        x: 165
-        y: 1294
+        x: 143
+        y: 1427
         width: 288
-        height: 526
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 527
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fc3b647d9200c14ca5882b6e8f13b61
-      internalID: -815917035
+      spriteID: 8f11051f32b1bd5418cb6892abae31ac
+      internalID: -313700132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChildJump_Run_8
+      name: ChildeJump_Run_2
       rect:
         serializedVersion: 2
-        x: 2185
-        y: 1266
-        width: 318
-        height: 530
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1190
+        y: 1414
+        width: 544
+        height: 533
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fede18c498a61cf4880c2ca41711e211
-      internalID: -40739629
+      spriteID: 9b1e99efe555bb241b5bf1fe644627f9
+      internalID: 430098096
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChildJump_Run_12
+      name: ChildeJump_Run_11
       rect:
         serializedVersion: 2
-        x: 442
-        y: 1294
-        width: 326
-        height: 368
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 624
+        y: 1414
+        width: 324
+        height: 369
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe817b1c69e4f2248bf63fcaac693d12
-      internalID: -808788033
+      spriteID: 83c3c047675b8a34f95c9441f13608b5
+      internalID: 551545130
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChildJump_Run_13
+      name: ChildeJump_Run_16
       rect:
         serializedVersion: 2
-        x: 1892
-        y: 1287
-        width: 311
-        height: 381
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 112
+        y: 826
+        width: 305
+        height: 506
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c035847365348a24b9bee5520542e703
-      internalID: -196688683
+      spriteID: d4c4333f0dd63bf4293377b0a9672a9f
+      internalID: 1665873169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChildJump_Run_16
+      name: ChildeJump_Run_17
       rect:
         serializedVersion: 2
-        x: 137
-        y: 660
+        x: 637
+        y: 838
+        width: 312
+        height: 382
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbaf7e56e57781f4c882ea132d081016
+      internalID: 356178169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChildeJump_Run_19
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 816
+        width: 338
+        height: 525
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb76f8c728c65d54fac79a72ff3fc39d
+      internalID: -204444671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChildeJump_Run_21
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 853
+        width: 292
+        height: 379
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e6dc044e6390047bc390d54aa21838
+      internalID: 1021202983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChildeJump_Run_22
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 266
         width: 360
         height: 475
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a82974407b2649a44b78cd7eecb256df
-      internalID: -21499121
+      spriteID: fb24b265208509040bd57395c2e02d98
+      internalID: -679904955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChildJump_Run_17
+      name: ChildeJump_Run_23
       rect:
         serializedVersion: 2
         x: 566
-        y: 660
+        y: 270
         width: 308
         height: 476
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63a56a29a65df9749989e15315c258d4
-      internalID: 258481256
+      spriteID: 7fabdd22dc91adf47b6cf75eb9e101ed
+      internalID: 1747326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChildJump_Run_19
+      name: ChildeJump_Run_25
       rect:
         serializedVersion: 2
-        x: 939
-        y: 647
+        x: 931
+        y: 242
         width: 301
         height: 486
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2fd252947248474090b06181b605acb
-      internalID: -1132811373
+      spriteID: 5e1562d2eaf121a42903f6962490d366
+      internalID: 1195062495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChildJump_Run_22
+      name: ChildeJump_Run_28
       rect:
         serializedVersion: 2
-        x: 1351
-        y: 660
-        width: 289
+        x: 1327
+        y: 240
+        width: 290
         height: 480
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb994d48ca43b314bbfb41694302d89f
-      internalID: -691141653
+      spriteID: 3801e111c24b6884f8b1ae5e09fea821
+      internalID: 1143244304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChildJump_Run_24
+      name: ChildeJump_Run_30
       rect:
         serializedVersion: 2
-        x: 1716
-        y: 646
-        width: 304
+        x: 1688
+        y: 226
+        width: 303
         height: 491
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fda90e5256c0f8044b259aed33a411d1
-      internalID: 873151281
+      spriteID: d97ce1fb85705414eb7a4351b2a3c8b8
+      internalID: 1539448028
       vertices: []
       indices: 
       edges: []
@@ -359,39 +359,44 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ChildJump_Run_21: -855983351
-      ChildJump_Run_1: -2147406981
-      ChildJump_Run_3: 1369191250
-      ChildJump_Run_23: -1759817785
-      ChildJump_Run_2: -357880409
-      ChildJump_Run_6: 408221619
-      ChildJump_Run_12: -808788033
-      ChildJump_Run_14: 2056922937
-      ChildJump_Run_20: -238315535
-      ChildJump_Run_5: -656536558
-      ChildJump_Run_17: 258481256
-      ChildJump_Run_13: -196688683
-      ChildJump_Run_19: -1132811373
-      ChildJump_Run_15: 1152994299
-      ChildJump_Run_8: -40739629
-      ChildJump_Run_22: -691141653
-      ChildJump_Run_9: 670262996
-      ChildJump_Run_24: 873151281
-      ChildJump_Run_11: -856835188
-      ChildJump_Run_4: -815917035
-      ChildJump_Run_25: -937443066
-      ChildJump_Run_0: -1397151662
-      ChildJump_Run_10: -1310948559
-      ChildJump_Run_16: -21499121
-      ChildJump_Run_7: -380698830
-      ChildJump_Run_18: -740011108
+      ChildeJump_Run_13: 39995090
+      ChildeJump_Run_16: 1665873169
+      ChildeJump_Run_23: 1747326
+      ChildeJump_Run_12: -995652085
+      ChildeJump_Run_27: -1519421709
+      ChildeJump_Run_30: 1539448028
+      ChildeJump_Run_8: -1377044332
+      ChildeJump_Run_17: 356178169
+      ChildeJump_Run_29: -505311460
+      ChildeJump_Run_6: -1301806574
+      ChildeJump_Run_11: 551545130
+      ChildeJump_Run_10: -850544926
+      ChildeJump_Run_25: 1195062495
+      ChildeJump_Run_20: 1891395425
+      ChildeJump_Run_15: 1443131364
+      ChildeJump_Run_7: 1725327439
+      ChildeJump_Run_2: 430098096
+      ChildeJump_Run_14: -2069531315
+      ChildeJump_Run_19: -204444671
+      ChildeJump_Run_4: 823698447
+      ChildeJump_Run_22: -679904955
+      ChildeJump_Run_3: 677246009
+      ChildeJump_Run_9: -1191347275
+      ChildeJump_Run_1: -2122947588
+      ChildeJump_Run_5: -1493869025
+      ChildeJump_Run_26: -4184025
+      ChildeJump_Run_24: -1116446039
+      ChildeJump_Run_28: 1143244304
+      ChildeJump_Run_21: 1021202983
+      ChildeJump_Run_0: -313700132
+      ChildeJump_Run_18: -1454336864
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 8f;
-    public float JumpForce = 10f;
+    public float JumpForce = 100f;
     public float climbSpeed = 4f;
 
     private float vertical;
@@ -20,18 +20,23 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject ChildPlayer;
     [SerializeField] private Rigidbody2D rb;
     private GameObject Player;
+    private float clock;
 
     void Start() {
-        Player = ChildPlayer;
+        Player = AdultPlayer;
         //rb = GetComponent<Rigidbody2D>();
     }
 
     void Update() {
         horizontal = Input.GetAxis("Horizontal"); 
         vertical = Input.GetAxisRaw("Vertical");
-        if(Input.GetAxisRaw("Jump") > 0 && Mathf.Abs(rb.velocity.y) < 0.01f) {
-            Jumping = true;
+        if(Mathf.Abs(rb.velocity.y) < 0.01f) {
+            myAnimator.SetBool("Jumping", false);
+            if (Input.GetAxisRaw("Jump") > 0) {
+                Jumping = true;
+            }
         }
+        
         if (inLadder && Mathf.Abs(vertical) > 0f) {
             onLadder = true;
             myAnimator.SetBool("onLadder", true);
@@ -39,9 +44,12 @@ public class PlayerController : MonoBehaviour
         if (onLadder && Mathf.Abs(rb.velocity.y) < 0.01f) {
             myAnimator.SetBool("isClimbing", false);
         }
+        if(horizontal == 0) {
+            myAnimator.SetBool("isRunning", false);
+        }
         if(Input.GetKeyDown("v")) {
             if(ObjectControl.age) {
-                JumpForce = 10f;
+                JumpForce = 100f;
                 AdultPlayer.active = true;
                 ChildPlayer.active = false;
                 Player = AdultPlayer;
@@ -57,6 +65,7 @@ public class PlayerController : MonoBehaviour
                 rb = Player.GetComponent<Rigidbody2D>();
             }
         }
+        clock -= Time.deltaTime;
     }
 
     private void FixedUpdate() {
@@ -71,11 +80,16 @@ public class PlayerController : MonoBehaviour
         if (Jumping == true) {
             rb.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
             Jumping = false;
+            myAnimator.SetBool("Jumping", true);
         }
         if(horizontal < 0) {
+            if(!onLadder)
+                myAnimator.SetBool("isRunning", true);
             Player.transform.localRotation = Quaternion.Euler(0, 180, 0);
         }
         if(horizontal > 0) {
+            if (!onLadder)
+                myAnimator.SetBool("isRunning", true);
             Player.transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
         rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y);

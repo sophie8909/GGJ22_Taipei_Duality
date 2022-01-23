@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 64491a1b768983b409f675028b231cac
+guid: 23a8030eef32b424ab71f1f7787859ea
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,85 +104,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AdultWalk_0
+      name: AdultRun_0
       rect:
         serializedVersion: 2
         x: 337
-        y: 595
-        width: 587
-        height: 856
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 869
+        width: 400
+        height: 583
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc355870549dff04396a3c7833bde6b1
-      internalID: -682082195
+      spriteID: 047d8fbabf79e7b45aa55d8c62be2308
+      internalID: 490814644
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AdultWalk_1
+      name: AdultRun_1
       rect:
         serializedVersion: 2
         x: 900
-        y: 601
-        width: 424
-        height: 871
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 853
+        width: 302
+        height: 620
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77c9b590b32cf164d9906f805072ea9f
-      internalID: 1773327116
+      spriteID: 98b56bf7c6ec9244296c21faac679161
+      internalID: 1407671585
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AdultWalk_2
+      name: AdultRun_2
       rect:
         serializedVersion: 2
-        x: 1431
-        y: 562
-        width: 411
-        height: 902
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1429
+        y: 840
+        width: 287
+        height: 624
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81dc103b6b6afb04a8b77577651e9a91
-      internalID: 92198874
+      spriteID: a5fd8dfa083e0ce498137f1f907fa218
+      internalID: 571125134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AdultWalk_3
+      name: AdultRun_3
       rect:
         serializedVersion: 2
         x: 1916
-        y: 557
-        width: 474
-        height: 891
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 856
+        width: 316
+        height: 592
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f6fac71525a0664fab25124a5a1ac7d
-      internalID: -1158276484
+      spriteID: a5bb59044f002e04cae78a48aa2c0bf5
+      internalID: -1446458064
       vertices: []
       indices: 
       edges: []
@@ -198,10 +198,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      AdultWalk_0: -682082195
-      AdultWalk_1: 1773327116
-      AdultWalk_2: 92198874
-      AdultWalk_3: -1158276484
+      AdultRun_3: -1446458064
+      AdultRun_2: 571125134
+      AdultRun_0: 490814644
+      AdultRun_1: 1407671585
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
