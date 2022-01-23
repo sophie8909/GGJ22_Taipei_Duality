@@ -250,7 +250,7 @@ GameObject:
   - component: {fileID: 292716362}
   - component: {fileID: 292716361}
   m_Layer: 0
-  m_Name: C2AA617B-4939-4021-B69B-29FC011F2162_34
+  m_Name: Childbike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -585,7 +585,7 @@ GameObject:
   - component: {fileID: 590167495}
   - component: {fileID: 590167494}
   m_Layer: 0
-  m_Name: C2AA617B-4939-4021-B69B-29FC011F2162_46
+  m_Name: AdultBear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -972,7 +972,7 @@ GameObject:
   - component: {fileID: 753605778}
   - component: {fileID: 753605777}
   m_Layer: 0
-  m_Name: C2AA617B-4939-4021-B69B-29FC011F2162_11 (1)
+  m_Name: Adultrock2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1485,7 +1485,7 @@ GameObject:
   - component: {fileID: 1015938261}
   - component: {fileID: 1015938260}
   m_Layer: 0
-  m_Name: C2AA617B-4939-4021-B69B-29FC011F2162_45
+  m_Name: ChildBear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1791,7 +1791,7 @@ GameObject:
   - component: {fileID: 1248077711}
   - component: {fileID: 1248077710}
   m_Layer: 0
-  m_Name: C2AA617B-4939-4021-B69B-29FC011F2162_30
+  m_Name: Childrock1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1924,7 +1924,7 @@ GameObject:
   - component: {fileID: 1248995304}
   - component: {fileID: 1248995303}
   m_Layer: 0
-  m_Name: C2AA617B-4939-4021-B69B-29FC011F2162_11
+  m_Name: Adultrock1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8196,7 +8196,7 @@ GameObject:
   - component: {fileID: 1571378892}
   - component: {fileID: 1571378891}
   m_Layer: 0
-  m_Name: C2AA617B-4939-4021-B69B-29FC011F2162_45 (1)
+  m_Name: ChildBear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8529,7 +8529,7 @@ GameObject:
   - component: {fileID: 1695088649}
   - component: {fileID: 1695088648}
   m_Layer: 0
-  m_Name: C2AA617B-4939-4021-B69B-29FC011F2162_35
+  m_Name: Adultbike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8841,7 +8841,7 @@ GameObject:
   - component: {fileID: 1921058703}
   - component: {fileID: 1921058702}
   m_Layer: 0
-  m_Name: C2AA617B-4939-4021-B69B-29FC011F2162_30 (1)
+  m_Name: Childrock2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9051,7 +9051,7 @@ GameObject:
   - component: {fileID: 1998187095}
   - component: {fileID: 1998187094}
   m_Layer: 0
-  m_Name: C2AA617B-4939-4021-B69B-29FC011F2162_46 (1)
+  m_Name: AdultBear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
