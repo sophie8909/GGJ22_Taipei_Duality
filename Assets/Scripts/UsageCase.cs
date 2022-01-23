@@ -9,6 +9,7 @@ public class UsageCase : MonoBehaviour
     private ES_MessageSystem msgSys;
     public UnityEngine.UI.Text uiText;
     public TextAsset textAsset;
+    public GameObject Canvas;
     private List<string> textList = new List<string>();
     private int textIndex = 0;
 
@@ -71,6 +72,11 @@ public class UsageCase : MonoBehaviour
         {
             msgSys.SetText(textList[textIndex]);
             textIndex++;
+        }
+
+        if(msgSys.IsCompleted == true && textIndex == textList.Count)
+        {
+            Canvas.SetActive(false);
         }
     }
 }
