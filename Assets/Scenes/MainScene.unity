@@ -1766,6 +1766,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa28fe38531c47419eb7864e4904c3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ChildBox: {fileID: 1420331716}
+  AdultBox: {fileID: 1612476227}
+  ChildBear1: {fileID: 1015938257}
+  AdultBear1: {fileID: 590167491}
+  ChildBear2: {fileID: 1571378888}
+  AdultBear2: {fileID: 1998187091}
+  Childrock1: {fileID: 1248077707}
+  Adultrock1: {fileID: 1248995300}
+  Childrock2: {fileID: 1921058699}
+  Adultrock2: {fileID: 753605774}
+  Childbike: {fileID: 292716358}
+  Adultbike: {fileID: 1695088645}
 --- !u!1 &1248077707
 GameObject:
   m_ObjectHideFlags: 0
