@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MemoryControl : MonoBehaviour
+public class ReturnToMain : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject Canvas;
     void Start()
     {
         
@@ -14,7 +13,8 @@ public class MemoryControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Canvas.SetActive(true);
+        
     }
 
+    public void OnClickMenuButton() => Application.LoadLevel(0);
 }
