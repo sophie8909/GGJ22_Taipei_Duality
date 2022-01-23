@@ -44,7 +44,7 @@ public class UsageCase : MonoBehaviour
         }
     }
 
-    void Update()
+    void  Update()
     {
         if (Input.GetKeyDown(KeyCode.S))
         {
@@ -74,9 +74,17 @@ public class UsageCase : MonoBehaviour
             textIndex++;
         }
 
-        if(msgSys.IsCompleted == true && textIndex == textList.Count)
+        if(msgSys.IsCompleted == true && textIndex <= textList.Count + 900)
         {
-            Canvas.SetActive(false);
+            if(textIndex != textList.Count + 899)
+            {
+                textIndex++;
+            }
+            textIndex++;
+            if(textIndex == textList.Count + 900)
+            {
+                Canvas.SetActive(false);
+            }
         }
     }
 }
