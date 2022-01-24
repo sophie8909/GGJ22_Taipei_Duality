@@ -940,7 +940,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1.5
+    m_LineSpacing: 1.2
   m_Text: New Text
 --- !u!222 &529346437
 CanvasRenderer:
@@ -2375,7 +2375,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1.5
+    m_LineSpacing: 1.2
   m_Text: New Text
 --- !u!222 &1100084100
 CanvasRenderer:
@@ -34596,7 +34596,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1.5
+    m_LineSpacing: 1.2
   m_Text: New Text
 --- !u!222 &2019956241
 CanvasRenderer:
