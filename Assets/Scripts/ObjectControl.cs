@@ -40,6 +40,9 @@ public class ObjectControl : MonoBehaviour
     public GameObject ChildBackGround;
     public GameObject AdultBackGround;
 
+    public GameObject AdultCart;
+    public GameObject ChildCart;
+    
     private Vector3 getpos(GameObject obj)
     {
         Vector3 temp = obj.transform.position;
@@ -67,6 +70,7 @@ public class ObjectControl : MonoBehaviour
         Childrope.SetActive(true);
         Childlevel3.SetActive(true);
         ChildBackGround.SetActive(true);
+        ChildCart.SetActive(true);
 
     }
 
@@ -91,6 +95,7 @@ public class ObjectControl : MonoBehaviour
         AdultHorse.transform.position = getpos(ChildHorse);
         Adultrope.SetActive(true);
         AdultBackGround.SetActive(true);
+        AdultCart.SetActive(true);
     }
 
     public void Close_ChildObject(){
@@ -106,6 +111,7 @@ public class ObjectControl : MonoBehaviour
         ChildStair.SetActive(false);
         //Childlevel3.SetActive(false);
         ChildBackGround.SetActive(false);
+        ChildCart.SetActive(false);
     }
 
     public void Close_AdultObject()
@@ -120,6 +126,7 @@ public class ObjectControl : MonoBehaviour
         AdultHorse.SetActive(false);
         Adultrope.SetActive(false);
         AdultBackGround.SetActive(false);
+        AdultCart.SetActive(false);
     }
 
     // Start is called before the first frame update

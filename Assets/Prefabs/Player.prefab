@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 1605282787, guid: 668be3818c68303439995bffa66a7828, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -126,7 +126,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.1
+  m_Mass: 0.01
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -161,7 +161,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: a7e309d49373f9e4d8853c665ff6e8df, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -323,7 +323,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: -1780967669, guid: b5883b560ecd59a4a8125ac998c910ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -428,7 +428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5464533811717677020, guid: 084b689f94753974b87ce8b5c47e2998, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.05741501
+      value: -0.057415366
       objectReference: {fileID: 0}
     - target: {fileID: 5464533811717677020, guid: 084b689f94753974b87ce8b5c47e2998, type: 3}
       propertyPath: m_LocalPosition.y
@@ -452,11 +452,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5464533812780571466, guid: 084b689f94753974b87ce8b5c47e2998, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.05741501
+      value: 3.9589834
       objectReference: {fileID: 0}
     - target: {fileID: 5464533812780571466, guid: 084b689f94753974b87ce8b5c47e2998, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.9799242
+      value: 1.9360442
       objectReference: {fileID: 0}
     - target: {fileID: 5464533812780571466, guid: 084b689f94753974b87ce8b5c47e2998, type: 3}
       propertyPath: m_LocalPosition.z
