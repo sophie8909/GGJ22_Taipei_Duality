@@ -142,11 +142,13 @@ public class ObjectControl : MonoBehaviour
     private void OnEnable()
     {
         PineappleControl.OnGetPineApple += SwitchToChild;
+        MotherboardControl.OnGetMotherBoard += SwitchToAdult;
     }
     
     private void OnDisable()
     {
         PineappleControl.OnGetPineApple -= SwitchToChild;
+        MotherboardControl.OnGetMotherBoard -= SwitchToAdult;
     }
 
     // Update is called once per frame

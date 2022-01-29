@@ -1,9 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MotherboardControl : MonoBehaviour
 {
+    public static event Action OnGetMotherBoard;
+    
     // Start is called before the first frame update
     public GameObject Canvas;
 
@@ -24,6 +27,7 @@ public class MotherboardControl : MonoBehaviour
         {
             Canvas.SetActive(true);
             ObjectControl.GetMotherboard = true;
+            OnGetMotherBoard?.Invoke();
         }
     }
 }
