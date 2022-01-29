@@ -30,7 +30,17 @@ public class PlayerController : MonoBehaviour
         virtualCam = GetComponentInChildren<CinemachineVirtualCamera>();
         //rb = GetComponent<Rigidbody2D>();
     }
-
+    
+    private void OnEnable()
+    {
+        PineappleControl.OnGetPineApple += SwitchToChild;
+    }
+    
+    private void OnDisable()
+    {
+        PineappleControl.OnGetPineApple -= SwitchToChild;
+    }
+    
     void Update() {
         horizontal = Input.GetAxis("Horizontal"); 
         vertical = Input.GetAxisRaw("Vertical");
@@ -51,34 +61,46 @@ public class PlayerController : MonoBehaviour
         if(horizontal == 0) {
             myAnimator.SetBool("isRunning", false);
         }
-        if(Input.GetKeyDown("v")) {
+        if(Input.GetKeyDown(KeyCode.B)) {
 
-            if(ChildPlayer.active && ObjectControl.GetMotherboard) {
-                JumpForce = 100f;
-                AdultPlayer.active = true;
-                ChildPlayer.active = false;
-                Player = AdultPlayer;
-                Player.transform.position = ChildPlayer.transform.position;
-                rb = Player.GetComponent<Rigidbody2D>();
-                virtualCam.Follow = AdultPlayer.transform;
-                virtualCam.LookAt = AdultPlayer.transform;
-                myAnimator = AdultPlayer.GetComponent<Animator>();
-                //age = true;
+            if(ChildPlayer.active && ObjectControl.GetMotherboard)
+            {
+                SwitchToAdult();
             }
-            else if (AdultPlayer.active && ObjectControl.GetPineApple) {
-                JumpForce = 0.1f;
-                AdultPlayer.active = false;
-                ChildPlayer.active = true;
-                Player = ChildPlayer;
-                Player.transform.position = AdultPlayer.transform.position;
-                rb = Player.GetComponent<Rigidbody2D>();
-                virtualCam.Follow = ChildPlayer.transform;
-                virtualCam.LookAt = ChildPlayer.transform;
-                myAnimator = ChildPlayer.GetComponent<Animator>();
-                //age = false;
+            else if (AdultPlayer.active && ObjectControl.GetPineApple)
+            {
+                SwitchToChild();
             }
         }
         clock -= Time.deltaTime;
+    }
+
+    private void SwitchToChild()
+    {
+        JumpForce = 0.1f;
+        AdultPlayer.active = false;
+        ChildPlayer.active = true;
+        Player = ChildPlayer;
+        Player.transform.position = AdultPlayer.transform.position;
+        rb = Player.GetComponent<Rigidbody2D>();
+        virtualCam.Follow = ChildPlayer.transform;
+        virtualCam.LookAt = ChildPlayer.transform;
+        myAnimator = ChildPlayer.GetComponent<Animator>();
+        //age = false;
+    }
+
+    private void SwitchToAdult()
+    {
+        JumpForce = 100f;
+        AdultPlayer.active = true;
+        ChildPlayer.active = false;
+        Player = AdultPlayer;
+        Player.transform.position = ChildPlayer.transform.position;
+        rb = Player.GetComponent<Rigidbody2D>();
+        virtualCam.Follow = AdultPlayer.transform;
+        virtualCam.LookAt = AdultPlayer.transform;
+        myAnimator = AdultPlayer.GetComponent<Animator>();
+        //age = true;
     }
 
     private void FixedUpdate() {

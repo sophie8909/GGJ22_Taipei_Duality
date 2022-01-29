@@ -6,7 +6,8 @@ public class OpenIntro : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject Canvas;
-
+    private bool isTriggered = false;
+    
     void Start()
     {
         
@@ -20,6 +21,10 @@ public class OpenIntro : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Canvas.SetActive(true);
+        if (!isTriggered)
+        {
+            Canvas.SetActive(true);
+            isTriggered = true;
+        }
     }
 }

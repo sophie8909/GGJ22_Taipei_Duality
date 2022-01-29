@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
@@ -138,19 +139,39 @@ public class ObjectControl : MonoBehaviour
         Close_ChildObject();
     }
 
+    private void OnEnable()
+    {
+        PineappleControl.OnGetPineApple += SwitchToChild;
+    }
+    
+    private void OnDisable()
+    {
+        PineappleControl.OnGetPineApple -= SwitchToChild;
+    }
+
     // Update is called once per frame
     void Update(){
-        if(Input.GetKeyDown("v")){
-            if(age == true && GetPineApple == true ){
-                age = false;
-                Close_AdultObject();
-                Active_ChildObject();
+        if(Input.GetKeyDown(KeyCode.B)){
+            if(age && GetPineApple){
+                SwitchToChild();
             }
             else if (age == false && GetMotherboard){
-                age = true;
-                Close_ChildObject();
-                Active_AdultObject();
+                SwitchToAdult();
             }
         }
+    }
+
+    void SwitchToChild()
+    { 
+        age = false;
+        Close_AdultObject();
+        Active_ChildObject();
+    }
+
+    void SwitchToAdult()
+    {
+        age = true;
+        Close_ChildObject();
+        Active_AdultObject();
     }
 }
