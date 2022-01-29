@@ -46,14 +46,14 @@ public class UsageCase : MonoBehaviour
 
     void  Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            //You can sending the messages from strings or text-based files.
-            if (msgSys.IsCompleted)
-            {
-                msgSys.SetText("Send the messages![lr] HelloWorld![w]");
-            }
-        }
+        // if (Input.GetKeyDown(KeyCode.S))
+        // {
+        //     //You can sending the messages from strings or text-based files.
+        //     if (msgSys.IsCompleted)
+        //     {
+        //         msgSys.SetText("Send the messages![lr] HelloWorld![w]");
+        //     }
+        // }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
